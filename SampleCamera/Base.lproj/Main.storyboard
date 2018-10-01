@@ -41,14 +41,30 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Save" id="B0F-HN-zbE"/>
+                        <barButtonItem title="Save" id="B0F-HN-zbE">
+                            <connections>
+                                <action selector="onSaveButtonTapped:" destination="BYZ-38-t0r" id="DVB-mt-kTT"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="lFF-tV-xxY"/>
-                        <barButtonItem title="Edit" id="1SK-ld-6cf"/>
+                        <barButtonItem title="Edit" id="1SK-ld-6cf">
+                            <connections>
+                                <action selector="onEditButtonTapped:" destination="BYZ-38-t0r" id="zU3-C7-8sk"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="8FU-bF-oDo">
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="vgn-7R-qSw"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="vgn-7R-qSw">
+                            <connections>
+                                <action selector="onCameraButtonTapped:" destination="BYZ-38-t0r" id="0LW-Il-QJF"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="myImageView" destination="5Y8-LY-UTu" id="9ar-a8-lQG"/>
+                        <outlet property="myLabel" destination="nbJ-ma-chX" id="Fhn-Ir-OKL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
